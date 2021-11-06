@@ -1,1 +1,5 @@
 [0530/202555.243:ERROR:file_io_win.cc(243)] SetEndOfFile: La operación solicitada no se puede realizar en un archivo con una sección asignada a usuario abierta. (0x4C8)
+[1106/010803.299:ERROR:crash_report_database_win.cc(428)] unexpected header
+[1106/011757.832:ERROR:crash_report_database_win.cc(428)] unexpected header
+[1106/050556.656:ERROR:crash_report_database_win.cc(428)] unexpected header
+[1106/050737.674:ERROR:crash_report_database_win.cc(428)] unexpected header
