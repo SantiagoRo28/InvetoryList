@@ -1,16 +1,15 @@
 import { useLinkProps } from '@react-navigation/native';
-import React from 'react';
+import React, {useState} from 'react';
 import { View, Text, StyleSheet, TouchableHighlight, onChangeText, value, listItem, Button, } from 'react-native';
 import { TextInput } from 'react-native-gesture-handler';
 import { AgregarTextInput } from '../screens/Listas';
 
-var props = (TextInput)
+
 
 export default function NuevoObjetoButton() {
-
+const [objetos, setobjetos] = useState([]);
     return (
         <Button title= "Agregar Objeto"
-        onPress = {props.propData}
 
       />   );
 
