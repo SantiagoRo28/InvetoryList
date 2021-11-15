@@ -11,7 +11,7 @@ const [objetos, setobjetos] = useState([]);
     return (
         <Button title= "Agregar Objeto"
 
-      />   );
+      onPress = {()=> setObjetos} />   );
 
     }
 
