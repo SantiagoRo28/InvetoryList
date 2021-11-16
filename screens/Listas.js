@@ -1,5 +1,5 @@
 import * as React from "react";
-import { View, Text, Button, StyleSheet, TextInput, Image } from "react-native";
+import { View, Text, Button, StyleSheet, TextInput, Image, ScrollView, FlatList} from "react-native";
 import HomeButton from "../components/ui/HomeButton";
 import { useState } from "react";
 
@@ -12,6 +12,7 @@ export default function Home({ navigation }) {
   const [cantidadDelObjeto, setCantidadObjeto] = useState("");
 
   return <View style={styles.parent}>
+    <ScrollView contentContainerStyle={{width:800}}>
     <View style={styles.header}>
       <Image style={{ width: 500, height: 400, resizeMode: 'contain' }}
         source={require("../assets/Inventory_List_logo.png")} />
@@ -20,9 +21,9 @@ export default function Home({ navigation }) {
 
 
       <Text>Nombre del objeto</Text>
-      <TextInput onChange={(value)=> {setNombreObjeto(value)}} placeholder={""} style={{ backgroundColor: "grey", Color: "white", height: "10%" }} /> 
+      <TextInput onChange={(value)=> {setNombreObjeto(value)}} placeholder={""} style={{ backgroundColor: "grey", Color: "white", height: "150%" }} /> 
       <Text>Cantidad del objeto</Text>
-      <TextInput onChange={(value)=> {setCantidadObjeto(value)}} placeholder={""} style={{ backgroundColor: "grey", Color: "white", height: "10%" }} />
+      <TextInput onChange={(value)=> {setCantidadObjeto(value)}} placeholder={""} style={{ backgroundColor: "grey", Color: "white", height: "150%", marginBottom: 20}} />
 
 
       <Button title="Agregar Objeto"
@@ -31,7 +32,7 @@ export default function Home({ navigation }) {
       
       
       <View style={styles.form}>
-        {arrayInput}
+      
 
 
       </View>
@@ -44,7 +45,7 @@ export default function Home({ navigation }) {
 
     <View style={styles.footer}>
 
-    </View>
+    </View></ScrollView>
   </View>;
 }
 
