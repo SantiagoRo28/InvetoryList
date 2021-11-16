@@ -1,15 +1,9 @@
 import * as React from "react";
-import { View, Text, Button, StyleSheet, TextInput, Image, SafeAreaView, TouchableOpacity } from "react-native";
-import OpcionesButton from "../components/ui/OpcionesButton";
-import ListasButton from "../components/ui/ListasButton";
+import { View, Text, Button, StyleSheet, TextInput, Image } from "react-native";
 import HomeButton from "../components/ui/HomeButton";
-import NuevoObjetoButton from "../components/NuevoObjetoButton";
 import { useState } from "react";
-import { color } from "react-native-reanimated";
 
 export default function Home({ navigation }) {
-  let arrayInput = []
-  const [user, setUser] = useState()
   
   const [objetos, setObjetos] = useState([]);
 
@@ -25,9 +19,9 @@ export default function Home({ navigation }) {
     <View style={styles.body}>
 
 
-      Nombre del objeto
+      <Text>Nombre del objeto</Text>
       <TextInput onChange={(value)=> {setNombreObjeto(value)}} placeholder={""} style={{ backgroundColor: "grey", Color: "white", height: "10%" }} /> 
-      Cantidad del objeto
+      <Text>Cantidad del objeto</Text>
       <TextInput onChange={(value)=> {setCantidadObjeto(value)}} placeholder={""} style={{ backgroundColor: "grey", Color: "white", height: "10%" }} />
 
 
@@ -35,8 +29,7 @@ export default function Home({ navigation }) {
 
       onPress = {()=> setObjetos([...objetos, {nombre:nombreDelObjeto, cantidad:cantidadDelObjeto}])}/>
       
-      {objetos.map(objeto=>(<Text>{objeto.nombre}</Text>))}
-
+      
       <View style={styles.form}>
         {arrayInput}
 
