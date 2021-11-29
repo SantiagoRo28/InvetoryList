@@ -17,8 +17,11 @@ export default function Home({ navigation }) {
     
 
     <View style={styles.footer}>
-<NocheButton/>
+    
+    <Image style={{ width: 500, height: 400, resizeMode: 'contain' }}
+          source={require("../assets/Inventory_List_logo.png")} />
 
+    <NocheButton/>
 
     <HomeButton navigation={navigation}/>
     </View>

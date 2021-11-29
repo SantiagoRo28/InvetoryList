@@ -16,6 +16,9 @@ export default function Home({ navigation }) {
   return <View style={styles.parent}>
 
 <View style={styles.footer}>
+  
+<Image style={{ width: 500, height: 400, resizeMode: 'contain' }}
+          source={require("../assets/Inventory_List_logo.png")} />
 
     <SubirArchivoButton/>
 
