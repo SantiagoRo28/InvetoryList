@@ -4,6 +4,8 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
 import  Home  from './screens/Home';
 import Listas from './screens/Listas';
+import CargarListas from './screens/CargarListas';
+import Opciones from './screens/Opciones';
 
 
 function HomeScreen({ navigation }) {
@@ -33,6 +35,8 @@ export default function App() {
       <Drawer.Navigator initialRouteName="Home">
         <Drawer.Screen name="Home" component={Home} />
         <Drawer.Screen name="Listas" component={Listas} />
+        <Drawer.Screen name="CargarListas" component={CargarListas} />
+        <Drawer.Screen name="Opciones" component={Opciones} />
         <Drawer.Screen name="Notifications" component={NotificationsScreen} />
       </Drawer.Navigator>
     </NavigationContainer>

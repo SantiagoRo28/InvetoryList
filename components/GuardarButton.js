@@ -1,17 +1,17 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableHighlight } from 'react-native';
 
-
-export default function NocheButton() {
+export default function GuardarButton({navigation}) {
 
     return (
         <View style={localStyles.container}>
             <TouchableHighlight
                 activeOpacity={0.9}
                 underlayColor="white"
+                onPress={() => navigation.navigate('Home')}
             >
                 <View style={localStyles.button}>
-                    <Text style={localStyles.text}>Modo noche</Text>
+                    <Text style={localStyles.text}>Guardar Lista</Text>
                 </View>
             </TouchableHighlight>
 

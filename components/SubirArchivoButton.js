@@ -1,8 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableHighlight } from 'react-native';
 
-
-export default function NocheButton() {
+export default function SubirArchivoButton() {
 
     return (
         <View style={localStyles.container}>
@@ -11,7 +10,7 @@ export default function NocheButton() {
                 underlayColor="white"
             >
                 <View style={localStyles.button}>
-                    <Text style={localStyles.text}>Modo noche</Text>
+                    <Text style={localStyles.text}>Subir archivo</Text>
                 </View>
             </TouchableHighlight>
 
