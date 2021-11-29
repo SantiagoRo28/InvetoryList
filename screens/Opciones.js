@@ -12,9 +12,6 @@ export default function Home({ navigation }) {
 
   const [cantidadDelObjeto, setCantidadObjeto] = useState("");
 
-  
-
-
   return <View style={styles.parent}>
     
     

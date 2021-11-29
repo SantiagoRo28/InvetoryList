@@ -28,7 +28,7 @@ const localStyles = StyleSheet.create({
         alignSelf: "center",
         width: "25%",
         height: 55,
-        backgroundColor: "#E50914",
+        backgroundColor: "black",
         borderRadius: 50,
         shadowColor: "#E50914",
         shadowOffset: {
